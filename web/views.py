@@ -7,3 +7,8 @@ def index(request):
     context = {}
     template = loader.get_template('web/html5up-story/index.html')
     return HttpResponse(template.render(context, request))
+
+def indexdemo(request):
+    context = {}
+    template = loader.get_template('web/html5up-story/index-demo.html')
+    return HttpResponse(template.render(context, request))
