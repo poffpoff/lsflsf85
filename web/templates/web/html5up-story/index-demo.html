@@ -43,15 +43,22 @@
 		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-		<!-- Navbar -->
+    		<!-- Navbar -->
 		<div id="navbar">
-  <a href="#default" id="logo">Interprètes Fr/LSF en Vendée</a>
+  <a href="#default" id="logo">
+     <a onclick="myFunction()" class="icon small style2 fa-eye-slash"> Interprètes LSF Vendée</a>
+
+  </a>
   <div id="navbar-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+          <a href="#top" class="button small showHide primary smooth-scroll-middle icon fa-home">Accueil</a>
+          <a href="#contact" class="button small secondary smooth-scroll-middle">Actualités</a>
+          <a href="#contact" class="button small primary smooth-scroll-middle">Nous rencontrer</a>
+          <a href="#contact" class="button small secondary smooth-scroll-middle">Notre métier</a>
+          <a href="#contact" class="button small primary smooth-scroll-middle">Nous contacter</a>
+          <a href="#contact" class="button small secondary smooth-scroll-middle">Ils nous font confiance</a>
   </div>
+	<body class="is-preload">
+
 </div>
 
 		<!-- Wrapper -->
@@ -59,28 +66,9 @@
                     <!-- Banner -->
 					<section id="top" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-
-							<ul class="actions content-align-center">
-								<li><a href="#actualite" class="button smooth-scroll-middle">Actualités</a></li>
-								<li><a onclick="myFunction()" class="icon style2 fa-eye-slash"></a></li>
-							</ul>
-
-
 							<h1>Interprètes LSF Vendée</h1>
-							<p class="major">Véronique SAVARY & Elisa URRESTAIAZY vous acceuillent dans cet espace dédié au métier interprète Français / Langue des Signes Française en Vendée.</p>
+                            <p class="major">Véronique SAVARY & Elisa URRESTAIAZY vous acceuillent dans cet espace dédié au métier interprète Français / Langue des Signes Française en Vendée.</p>
 							<p><strong>Permanence</strong> LSF à la MDPH de Vendée, à la Roche-sur-Yon, chaque vendredi de 9h30 à 12h30.</p>
-
-							<ul class="actions content-align-center	fit">
-								<li><a href="#Savary" class="button primary smooth-scroll-middle">Nous rencontrer</a></li>
-							</ul>
-							<ul class="actions content-align-center	fit">
-								<li><a href="#lemetier" class="button primary smooth-scroll-middle">Notre métier</a></li>
-							</ul>
-							<ul class="actions content-align-center	fit">
-								<li><a href="#contact" class="button primary smooth-scroll-middle">Nous contacter</a></li>
-							</ul>
-
-
 						</div>
 						<div class="image">
                          <iframe width=100% height=100%
@@ -169,7 +157,7 @@
 
 
 				<!-- Banner -->
-					<section id="Savary" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="Savary" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 						    <ul class="actions">
 								<li><a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a></li>
@@ -204,7 +192,7 @@
 
 
 				<!-- Banner -->
-					<section id="elisa" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="elisa" scroll="no" style="overflow: hidden" class="spotlight style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 						    <ul class="actions">
 								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
@@ -240,7 +228,7 @@
 
 
                     <!-- Banner -->
-					<section id="lemetier" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="lemetier" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
     							<ul class="actions">
@@ -278,7 +266,7 @@
 					</section>
 
                     <!-- Banner -->
-					<section id="aide" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="aide" scroll="no" style="overflow: hidden" class="spotlight style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
 								<ul class="actions">
@@ -314,7 +302,7 @@
 
 
                     <!-- Banner -->
-					<section id="occasions" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="occasions" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
     							<ul class="actions">
@@ -425,11 +413,9 @@
 
 				function scrollFunction() {
 				if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-				document.getElementById("navbar").style.padding = "30px 10px";
-				document.getElementById("logo").style.fontSize = "25px";
+				document.getElementById("navbar").style.padding = "10px 30px";
 				} else {
-				document.getElementById("navbar").style.padding = "80px 10px";
-				document.getElementById("logo").style.fontSize = "35px";
+				document.getElementById("navbar").style.padding = "20px 30px";
 				}
 				}
 			</script>
