@@ -36,6 +36,10 @@
   #navbar {
     padding: 10px 20px !important;
   }
+  body {
+    padding: 200px 0px;
+    line-height: 1;
+}
   #navbar a {
     float: none;
     display: block;

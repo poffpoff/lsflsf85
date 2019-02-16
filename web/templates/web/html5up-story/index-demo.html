@@ -43,6 +43,7 @@
 		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
     		<!-- Navbar -->
 		<div id="navbar">
   <a href="#default" id="logo">
@@ -51,15 +52,16 @@
   </a>
   <div id="navbar-right">
           <a href="#top" class="button small showHide primary smooth-scroll-middle icon fa-home">Accueil</a>
-          <a href="#contact" class="button small secondary smooth-scroll-middle">Actualités</a>
-          <a href="#contact" class="button small primary smooth-scroll-middle">Nous rencontrer</a>
-          <a href="#contact" class="button small secondary smooth-scroll-middle">Notre métier</a>
-          <a href="#contact" class="button small primary smooth-scroll-middle">Nous contacter</a>
-          <a href="#contact" class="button small secondary smooth-scroll-middle">Ils nous font confiance</a>
+          <a href="#actualite" class="button small secondary smooth-scroll-middle">Actualités</a>
+          <a href="#Savary" class="button small primary smooth-scroll-middle">Véronique SAVARY</a>
+          <a href="#elisa" class="button small secondary smooth-scroll-middle">Elisa URRESTAIAZY </a>
+          <a href="#lemetier" class="button small primary smooth-scroll-middle">Notre métier</a>
+          <a href="#devis" class="button small secondary smooth-scroll-middle">Devis</a>
   </div>
+            </div>
+
 	<body class="is-preload">
 
-</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -159,9 +161,6 @@
 				<!-- Banner -->
 					<section id="Savary" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-						    <ul class="actions">
-								<li><a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a></li>
-							</ul>
 						    <h2>Véronique Savary</h2>
 							<ul class="alt">
 								<li>Formation SERRAC en 1990</li>
@@ -194,9 +193,6 @@
 				<!-- Banner -->
 					<section id="elisa" scroll="no" style="overflow: hidden" class="spotlight style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-						    <ul class="actions">
-								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-							</ul>
 							<h2>Elisa Urrestaiazu</h2>
 							<ul class="alt">
 								<li>Master interprète LSF - Paris 8</li>
@@ -219,7 +215,7 @@
 						</div>
 						<div class="image">
                          <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
+                            src="https://www.youtube.com/embed/8wRT_EKJSrk">
                         </iframe>
                         </div>
 					</section>
@@ -231,9 +227,7 @@
 					<section id="lemetier" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
-    							<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
+
 										<header>
 											<h2>Interprètes LSF</h2>
 										</header>
@@ -269,9 +263,7 @@
 					<section id="aide" scroll="no" style="overflow: hidden" class="spotlight style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
-								<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
+
 										<header>
 										    <h2>Aides financières</h2>
 										</header>
@@ -305,9 +297,7 @@
 					<section id="occasions" scroll="no" style="overflow: hidden" class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 								<!-- Definition List -->
-    							<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
+
 										<header>
 											<h2>En toutes occasions</h2>
 										</header>
@@ -321,7 +311,7 @@
 
 											</dl>
 								<ul class="actions">
-    								<a href="#contact" class="button showHide primary smooth-scroll-middle small icon fa-arrow-down">Contactez-nous</a>
+    								<a href="#devis" class="button showHide primary smooth-scroll-middle small icon fa-arrow-down">Devis gratuit</a>
     							</ul>
 						</div>
 						<div class="image">
@@ -338,9 +328,9 @@
 							<div class="index align-left">
 
 								<!-- Form -->
-									<section id="contact">
+									<section id="devis">
 										<header>
-											<h3>Contactez-nous</h3>
+											<h3>Devis</h3>
 										</header>
 										<div class="content">
 
@@ -354,7 +344,7 @@
 														<label for="firstName">Prénom</label>
 														<input type="text" name="firstName" id="firstName" value="">
 													</div>
-													<div class="field ">
+													<div class="field half">
 														<label for="email">E-mail</label>
 														<input type="email" name="email" id="email" value="">
 													</div>
@@ -371,6 +361,35 @@
 															<option value="2">Elisa URRESTAIAZY</option>
 														</select>
 													</div>
+                                                    <div class="field half">
+														<label for="destination">Occasion</label>
+														<select name="department" id="department">
+															<option value="">-</option>
+															<option value="">Conférence</option>
+															<option value="">Liaison</option>
+															<option value="">Formation</option>
+															<option value="">Réunion</option>
+															<option value="">Réunion technique</option>
+															<option value="">Réunion supérieur </option>
+															<option value="">Autre</option>
+														</select>
+													</div>
+                                                    <div class="field half">
+														<label for="objet">Date</label>
+														<input type="text" name="objet" id="objet" value="">
+													</div>
+                                                    <div class="field half">
+														<label for="objet">Lieu</label>
+														<input type="text" name="objet" id="objet" value="">
+													</div>
+                                                    <div class="field half">
+														<label for="objet">Heure début</label>
+														<input type="text" name="objet" id="objet" value="">
+													</div>
+                                                     <div class="field half">
+														<label for="objet">Heure fin</label>
+														<input type="text" name="objet" id="objet" value="">
+													</div>
 													<div class="field">
 														<label for="message">Message</label>
 														<textarea name="message" id="message" rows="6"></textarea>
@@ -378,10 +397,14 @@
 												</div>
 												<ul class="actions">
 													<li><input type="submit" name="submit" id="submit" value="Envoyer"></li>
+													<li><a href="#aide" class="button primary smooth-scroll-middle  icon fa-euro">Aides financières</a>
+</li>
 												</ul>
+
 											</form>
 
 										</div>
+
 									</section>
 
 							</div>
