@@ -1,413 +1,105 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-	Note: Only needed for demo purposes. Delete for production sites.
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Interprètes LSF Vendée</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-            .showHide { display:none; }
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
 
-            /* Desktop*/
-            @media screen and (min-width: 768px) {
-              .showHide  { display: block; }
-            }
-        </style>
-		<script>
-		    var n = 0;
-		    function myFunction(){
-		        n++;
-		        var z = n % 2;
-                var colors = ["white", "rgb(238,218,55)"];
-                var fontColors = ["black", "blue"];
-                var fontWeights = ["lighter", "bold"];
-                // var fontSizes = ["12px", "14px"];
-                selectedColor = colors[z];
-                selectedFontColor = fontColors[z];
-                selectedFontWeight = fontWeights[z];
-                // selectedFontSize = fontSizes[z];
-                $("body").css("background-color", selectedColor);
-                $("body").css("color", selectedFontColor);
-                $("body").css("font-weight", selectedFontWeight);
-                // $("body").css("font-size", selectedFontSize);
-            }
-		</script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-                    <!-- Banner -->
-					<section id="top" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
 
-							<ul class="actions content-align-center">
-								<li><a href="#actualite" class="button smooth-scroll-middle">Actualités</a></li>
-								<li><a onclick="myFunction()" class="icon style2 fa-eye-slash"></a></li>
-							</ul>
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
 
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
 
-							<h1>Interprètes LSF Vendée</h1>
-							<p class="major">Véronique SAVARY & Elisa URRESTAIAZY vous acceuillent dans cet espace dédié au métier interprète Français / Langue des Signes Française en Vendée.</p>
-							<p><strong>Permanence</strong> LSF à la MDPH de Vendée, à la Roche-sur-Yon, chaque vendredi de 9h30 à 12h30.</p>
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-							<ul class="actions content-align-center	fit">
-								<li><a href="#Savary" class="button primary smooth-scroll-middle">Nous rencontrer</a></li>
-							</ul>
-							<ul class="actions content-align-center	fit">
-								<li><a href="#lemetier" class="button primary smooth-scroll-middle">Notre métier</a></li>
-							</ul>
-							<ul class="actions content-align-center	fit">
-								<li><a href="#contact" class="button primary smooth-scroll-middle">Nous contacter</a></li>
-							</ul>
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
 
+#navbar-right {
+  float: right;
+}
 
-						</div>
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk?autoplay=1">
-                        </iframe>
-						</div>
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
 
-					</section>
+<div id="navbar">
+  <a href="#default" id="logo">CompanyLogo</a>
+  <div id="navbar-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
 
+<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+  <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
+  <p>Scroll down this frame to see the effect!</p>
+  <p>Scroll to the top to remove the effect.</p>
+  <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+  <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
 
-				<!-- Gallery -->
-					<section id="actualite" class="wrapper style1 align-center">
-					    <div class="inner">
-							<h2>Actualités</h2>
-						</div>
-						<!-- Gallery -->
-							<div class="gallery style2 large lightbox onload-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
 
-							</div>
-					    <div class="inner">
-							<h2> </h2>
-						</div>
-					</section>
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
 
-
-
-
-				<!-- Banner -->
-					<section id="Savary" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-						    <ul class="actions">
-								<li><a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a></li>
-							</ul>
-						    <h2>Véronique Savary</h2>
-							<ul class="alt">
-								<li>Formation SERRAC en 1990</li>
-								<li>DFSSU en 2005</li>
-								<li>Master interprète LSF en 2010</li>
-								<li>Membre AFILS</li>
-							</ul>
-				            <div class="box content-align-left orient-left">
-    							<ul class="icons">
-    								<li><span class="icon style1 fa-phone"></span></li>
-    								<li>06 76 37 15 87</li>
-    								<li><span class="icon style1 fa-envelope"></span></li>
-    								<li>asso.siel@free.fr</li>
-    								<li><a target="_blank" href="https://www.facebook.com/Association-SIEL-1011515855539761/" class="icon style2 fa-facebook"></a></li>
-    							</ul>
-							</div>
-						<ul class="actions content-align-center	small">
-								<li><a href="#elisa" class="button small primary icon fa-arrow-down smooth-scroll-middle">Elisa Urrestaiazu</a></li>
-						</ul>
-						</div>
-
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
-                        </iframe>
-                        </div>
-					</section>
-
-
-				<!-- Banner -->
-					<section id="elisa" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-						    <ul class="actions">
-								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-							</ul>
-							<h2>Elisa Urrestaiazu</h2>
-							<ul class="alt">
-								<li>Master interprète LSF - Paris 8</li>
-								<li>Membre AFILS</li>
-								<li>Traduction écrites, vidéo interprétation</li>
-							</ul>
-							<div class="box content-align-left orient-left">
-
-							<ul class="icons">
-								<li><span  class="icon style1 fa-phone"></span></li>
-								<li>06 11 79 65 24</li>
-								<li><span class="icon style1 fa-envelope"></span></li>
-								<li>urrestaizu.elisa@gmail.com </li>
-								<li><a target="_blank" href="https://www.facebook.com/ElisaUrrestarazu/" class="icon style2 fa-facebook"></a></li>
-							</ul>
-							</div>
-							<ul class="actions">
-								<li><a href="#lemetier" class="button primary smooth-scroll-middle small icon fa-arrow-down">Notre métier</a></li>
-							</ul>
-						</div>
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
-                        </iframe>
-                        </div>
-					</section>
-
-
-
-
-                    <!-- Banner -->
-					<section id="lemetier" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-								<!-- Definition List -->
-    							<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
-										<header>
-											<h2>Interprètes LSF</h2>
-										</header>
-										<dl>
-											  	<dd>
-												    <p>Un interprète en LSF est un professionel qui traduit de la LSF vers le Français et du Français vers la LSF.</p>
-												</dd>
-												<dt>Fidélité</dt>
-												<dd>
-													<p>Un interprète en LSF traduit le même discours, sans ajouter sans ommettre.</p>
-												</dd>
-												<dt>Neutralité</dt>
-												<dd>
-													<p>Un interprète en LSF n'intervient pas, n'esxprime pas son avi. Il est au service du client.</p>
-												</dd>
-												<dt>Secret Professionnel</dt>
-												<dd>
-													<p>Un interprète en LSF ne dévulgue en aucun cas le contenu entendu, vu, compris ou deviné.</p>
-												</dd>
-											</dl>
-								<ul class="actions">
-    								<a href="#aide" class="button primary smooth-scroll-middle small icon fa-arrow-down">Aides financières</a>
-    							</ul>
-						</div>
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
-                        </iframe>
-                        </div>
-					</section>
-
-                    <!-- Banner -->
-					<section id="aide" scroll="no" style="overflow: hidden" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-								<!-- Definition List -->
-								<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
-										<header>
-										    <h2>Aides financières</h2>
-										</header>
-										<dl>
-												<dt>AGEFIPH</dt>
-												<dd>
-													<p>Aide financière à destination des entreprise du secteur privée.Prise en charge du financement de l'accessibilité</p>
-												</dd>
-												<dt>FIDHFP</dt>
-												<dd>
-													<p>Aide financière à destination des entreprise du secteur public.Prise en charge du financement de l'accessibilité</p>
-												</dd>
-												<dt>MDPH</dt>
-												<dd>
-													<p>Aide financière à destination des entreprise des particuliers.PCH (Prestation Compensation Handicap) : financement des besoins en accessibilité</p>
-												</dd>
-											</dl>
-								<ul class="actions">
-    								<a href="#occasions" class="button smooth-scroll-middle primary small icon fa-arrow-down">En quelles occasions ?</a>
-    							</ul>
-						</div>
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
-                        </iframe>
-                        </div>
-					</section>
-
-
-                    <!-- Banner -->
-					<section id="occasions" scroll="no" style="overflow: hidden" class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-								<!-- Definition List -->
-    							<ul class="actions">
-    								<a href="#top" class="button showHide smooth-scroll-middle icon fa-home">Accueil</a>
-    							</ul>
-										<header>
-											<h2>En toutes occasions</h2>
-										</header>
-										<dl>
-												<dd><span class="icon style2 fa-user-md fa-2x"></span><span class="icon style2 fa-gavel fa-2x"></span><span class="icon style2 fa-wrench fa-2x"></span></dd>
-												<dd><span class="icon style2 fa-graduation-cap fa-2x"></span><span class="icon style2 fa-car fa-2x"></span><span class="icon style2 fa-glass fa-2x"></span></dd>
-
-												<dt>
-												    <p>Nous nous adaptons à tous vos besoins : rendez-vous médical, formation, conférence, évènements religieux ... </p>
-												</dt>
-
-											</dl>
-								<ul class="actions">
-    								<a href="#contact" class="button showHide primary smooth-scroll-middle small icon fa-arrow-down">Contactez-nous</a>
-    							</ul>
-						</div>
-						<div class="image">
-                         <iframe width=100% height=100%
-                            src="https://www.youtube.com/embed/EHDK9IcPgtk">
-                        </iframe>
-                        </div>
-					</section>
-                    <!--Form-->
-
-
-                    <section class="wrapper style1 align-center">
-						<div class="inner">
-							<div class="index align-left">
-
-								<!-- Form -->
-									<section id="contact">
-										<header>
-											<h3>Contactez-nous</h3>
-										</header>
-										<div class="content">
-
-											<form method="post" action="#">
-												<div class="fields">
-													<div class="field half">
-														<label for="name">Nom</label>
-														<input type="text" name="name" id="name" value="">
-													</div>
-													<div class="field half">
-														<label for="firstName">Prénom</label>
-														<input type="text" name="firstName" id="firstName" value="">
-													</div>
-													<div class="field ">
-														<label for="email">E-mail</label>
-														<input type="email" name="email" id="email" value="">
-													</div>
-
-													<div class="field half">
-														<label for="objet">Objet</label>
-														<input type="text" name="objet" id="objet" value="">
-													</div>
-													<div class="field half">
-														<label for="destination">A destination de :</label>
-														<select name="department" id="department">
-															<option value="">Véronique SAVARY & Elisa URRESTAIAZY</option>
-															<option value="1">Véronique SAVARY</option>
-															<option value="2">Elisa URRESTAIAZY</option>
-														</select>
-													</div>
-													<div class="field">
-														<label for="message">Message</label>
-														<textarea name="message" id="message" rows="6"></textarea>
-													</div>
-												</div>
-												<ul class="actions">
-													<li><input type="submit" name="submit" id="submit" value="Envoyer"></li>
-												</ul>
-											</form>
-
-										</div>
-									</section>
-
-							</div>
-
-						</div>
-					</section>
-
-
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
