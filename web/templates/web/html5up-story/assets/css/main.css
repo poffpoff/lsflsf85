@@ -2215,7 +2215,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000000;
+			background-color: #048B9A;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -6419,7 +6419,7 @@ input, select, textarea {
 			.gallery.style1 input[type="button"].primary,
 			.gallery.style1 button.primary,
 			.gallery.style1 .button.primary {
-				background-color: #ffffff;
+				background-color: #048B9A;
 				box-shadow: none;
 				color: #000000 !important;
 			}
@@ -6743,7 +6743,7 @@ input, select, textarea {
 			.gallery.style2 input[type="button"].primary,
 			.gallery.style2 button.primary,
 			.gallery.style2 .button.primary {
-				background-color: #ffffff;
+				background-color: #048B9A;
 				box-shadow: none;
 				color: #000000 !important;
 			}
@@ -8306,7 +8306,7 @@ input, select, textarea {
 				#wrapper > .invert input[type="button"].primary,
 				#wrapper > .invert button.primary,
 				#wrapper > .invert .button.primary {
-					background-color: #ffffff;
+					background-color: #048B9A;
 					box-shadow: none;
 					color: #000000 !important;
 				}

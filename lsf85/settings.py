@@ -133,3 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+SENDGRID_API_KEY='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'
