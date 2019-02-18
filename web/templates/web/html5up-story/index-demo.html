@@ -46,10 +46,16 @@
 
     		<!-- Navbar -->
 		<div id="navbar">
+			<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
   <a href="#default" id="logo">
      <a onclick="myFunction()" class="icon small style2 fa-eye-slash"> Interprètes LSF Vendée</a>
 
   </a>
+
   <div id="navbar-right">
           <a href="#top" class="button small showHide primary smooth-scroll-middle icon fa-home">Accueil</a>
           <a href="#actualite" class="button small secondary smooth-scroll-middle">Actualités</a>
@@ -440,6 +446,13 @@
 				} else {
 				document.getElementById("navbar").style.padding = "20px 30px";
 				}
+				}
+			</script>
+
+			<script>
+			//menu button
+				function myFunction(x) {
+				  x.classList.toggle("change");
 				}
 			</script>
 
