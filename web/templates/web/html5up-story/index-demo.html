@@ -25,7 +25,7 @@
         </style>
 		<script>
 		    var n = 0;
-		    function myFunction(){
+		    function myFunctionColor(){
 		        n++;
 		        var z = n % 2;
                 var colors = ["white", "rgb(238,218,55)"];
@@ -42,28 +42,69 @@
                 // $("body").css("font-size", selectedFontSize);
             }
 		</script>
+		<script>
+		    var n = 0;
+		    function myFunctionMenu2(){
+		        n++;
+		        var z = n % 2;
+                var modes = ["block", "none"];
+                var paddings = ["250px 0px", "75px 0px"];
+
+                selectedMode = modes[z];
+                selectedPaddding = paddings[z];
+				document.getElementById("mainFrameOne").style.display=selectedMode;
+				$("body").css("padding", selectedPaddding);
+
+
+            }
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 
+
     		<!-- Navbar -->
 		<div id="navbar">
-			<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-  <a href="#default" id="logo">
-     <a onclick="myFunction()" class="icon small style2 fa-eye-slash"> Interprètes LSF Vendée</a>
 
-  </a>
+  <a href="#default" id="logo">
+
+
+
+	  <ul class="actions fixed">
+		<li>
+						<a onclick="myFunctionMenu2(this)">
+				<div class="container" onclick="myFunctionMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+	 		</a>
+		</li>
+
+		<li>
+			     <a onclick="myFunctionColor()" class="icon  style2 fa-eye-slash">  Interprètes LSF Vendée  </a>
+
+		</li>
+
+	</ul>
+
 
   <div id="navbar-right">
-          <a href="#top" class="button small showHide primary smooth-scroll-middle icon fa-home">Accueil</a>
+
+	  <div id="mainFrameOne">
+            <a href="#top" class="button small showHide primary smooth-scroll-middle icon fa-home">Accueil</a>
           <a href="#actualite" class="button small secondary smooth-scroll-middle">Actualités</a>
           <a href="#Savary" class="button small primary smooth-scroll-middle">Véronique SAVARY</a>
           <a href="#elisa" class="button small secondary smooth-scroll-middle">Elisa URRESTAIAZY </a>
           <a href="#lemetier" class="button small primary smooth-scroll-middle">Notre métier</a>
           <a href="#devis" class="button small secondary smooth-scroll-middle">Devis</a>
+
+
+
+
+
+	  </div>
+
+
   </div>
             </div>
 
@@ -452,7 +493,7 @@
 
 			<script>
 			//menu button
-				function myFunction(x) {
+				function myFunctionMenu(x) {
 				  x.classList.toggle("change");
 				}
 			</script>
