@@ -23,7 +23,13 @@
 }
 
 
+
+
 @media screen and (max-width: 580px) {
+    #mainFrameOne {
+      display: none;
+    }
+
     .container {
       display: inline-block;
       cursor: pointer;

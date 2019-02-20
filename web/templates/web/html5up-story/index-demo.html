@@ -47,8 +47,8 @@
 		    function myFunctionMenu2(){
 		        n++;
 		        var z = n % 2;
-                var modes = ["block", "none"];
-                var paddings = ["250px 0px", "75px 0px"];
+                var modes = [ "none", "block"];
+                var paddings = [ "75px 0px", "250px 0px"];
 
                 selectedMode = modes[z];
                 selectedPaddding = paddings[z];
@@ -69,23 +69,20 @@
 
 
 
-	  <ul class="actions fixed">
-		<li>
-						<a onclick="myFunctionMenu2(this)">
-				<div class="container" onclick="myFunctionMenu(this)">
+
+						<a  onclick="myFunctionMenu2(this)">
+				<div class="container"  onclick="myFunctionMenu(this)">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
 				</div>
 	 		</a>
-		</li>
 
-		<li>
+
 			     <a onclick="myFunctionColor()" class="icon  style2 fa-eye-slash">  Interprètes LSF Vendée  </a>
 
-		</li>
 
-	</ul>
+
 
 
   <div id="navbar-right">
